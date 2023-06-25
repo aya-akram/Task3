@@ -1,8 +1,11 @@
-<?php
 
-require_once 'Course.php';
-require_once 'Student.php';
-require_once 'Manager.php';
+<?php
+spl_autoload_register(function ($class) {
+    $class = str_replace("\\", "/", $class);
+    $path = $_SERVER['DOCUMENT_ROOT'] . '/Task3/' . $class . '.php';
+    echo $path . "<br>";
+    require_once $path;
+});
 
 use StudentManagementSystem\Entities\Course;
 use StudentManagementSystem\Entities\Student;
@@ -22,6 +25,8 @@ $manager->addStudent(new Student("aya", "aya@gmail.com", [$course1, $course2,$co
 $manager->addStudent(new Student("hala", "hh@gmail.com", [$course1]));
 $manager->addStudent(new Student("salma", "ss@gmail.com", [$course2]));
 $manager->addStudent(new Student("Aya akram ", "aya@hotmail.com", [$course1,$course2]));
+$manager->addStudent(new Student("saqer ", "aya@hotmail.com", [$course1,$course2]));
+
 
 
 // Update student details

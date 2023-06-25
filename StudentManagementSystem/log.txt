@@ -2,14 +2,7 @@ Added student with ID 1
 Added student with ID 2
 Added student with ID 3
 Added student with ID 4
-Updated student with ID 1
-Retrieved student with ID 1
-Deleted student with ID 1
-Retrieved student with ID 1
-Added student with ID 1
-Added student with ID 2
-Added student with ID 3
-Added student with ID 4
+Added student with ID 5
 Updated student with ID 1
 Retrieved student with ID 1
 Deleted student with ID 1
